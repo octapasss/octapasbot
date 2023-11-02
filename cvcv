@@ -1,0 +1,17 @@
+termux-setup-storage 
+pkg upgrade -y && pkg update -y 
+pkg install git -y pkg install nodejs -y   
+cd /sdcard && rm -rf BixbyBot && git clone https://github.com/MoonContentCreator/BixbyBot-Md.git 
+termux-setup-storage 
+pkg upgrade -y && pkg update -y 
+pkg install git -y 
+pkg install nodejs -y   
+pkg install ffmpeg -y 
+pkg install imagemagick -y 
+pkg install yarn 
+cd /sdcard && rm -rf BixbyBot && git clone https://github.com/MoonContentCreator/BixbyBot-Md.git 
+cd BixbyBot-Md 
+yarn install 
+npm install 
+npm update 
+sh start.sh 
